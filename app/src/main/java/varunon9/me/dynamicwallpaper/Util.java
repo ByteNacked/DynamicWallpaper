@@ -36,10 +36,10 @@ public class Util {
 
     public void setRandomWallpaper(Context context) {
         // check for permission
-        if (!hasPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-            Log.d(TAG, "App does not have WRITE_EXTERNAL_STORAGE permission");
-            return;
-        }
+//        if (!hasPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+//            Log.d(TAG, "App does not have WRITE_EXTERNAL_STORAGE permission");
+//            return;
+//        }
         String sdCardPath = Environment.getExternalStorageDirectory().toString();
         String wallpaperDirectoryPath = sdCardPath + File.separator + WALLPAPER_DIRECTORY;
         File wallpaperDirectory = new File(wallpaperDirectoryPath);
